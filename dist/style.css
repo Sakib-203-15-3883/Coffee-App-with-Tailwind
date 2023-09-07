@@ -1,0 +1,9 @@
+.hero {
+    background-image: url('./assets/coffee-1.jpg');
+    background-position: center top;
+    background-size: cover;
+    
+    /* min-height: 100%; */
+
+   
+}
