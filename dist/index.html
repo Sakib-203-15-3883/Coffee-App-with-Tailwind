@@ -1,22 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee App</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
-    <div class="grid grid-cols-3">
-        <div>box-1</div>
-        <div>box-2</div>
-        <div>box-3</div>
-        <div>box-4</div>
-        <div>box-5</div>
-        <div>box-6</div>
-        <div>box-7</div>
-        <div>box-8</div>
-        <div>box-9</div>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- header -->
+    <div
+      class="px-10 py-4 flex justify-between items-center sticky top-0 bg-blue-100"
+    >
+      <!-- logo -->
+      <div>
+        <h1
+          class="font-bold text-2xl shadow-xl rounded-full md:p-3 p-1 bg-gray-800 text-white"
+        >
+          COFFEE SHOP
+        </h1>
+      </div>
+      <!-- logo-end  -->
+
+      <!-- menu  -->
+      <div
+        class="flex space-x-8 hidden md:flex font-semibold text-gray-600 text-center"
+      >
+        <a
+          class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          href="#"
+          >Home</a
+        >
+
+        <a
+          class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          href="#"
+          >Menu</a
+        >
+
+        <a
+          class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          href="#"
+          >Blog</a
+        >
+
+        <a
+          class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          href="#"
+          >About</a
+        >
+
+        <a
+          class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          href="#"
+          >Contact</a
+        >
+
+        
+      </div>
+      <!-- menu-end -->
+
+      <!-- mobile-menu-button -->
+
+      <div class="md:hidden" id="mobile-menu-button">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- mobile-menu-button-end  -->
     </div>
-</body>
+    <!-- header-end  -->
+
+    <!-- /////////////////////////////////////// -->
+
+    <!-- mobile-menu -->
+
+    <div
+      class="flex flex-col items-center space-y-3 md:hidden hidden mb-3"
+      id="mobile-menu"
+    >
+      <a class="block" href="#">Home</a>
+      <a class="block" href="#">Menu</a>
+
+      <a class="block" href="#">Blog</a>
+      <a class="block" href="#">About</a>
+      <a class="block" href="#">Contact</a>
+      
+    </div>
+
+    <!-- mobile-menu-end -->
+
+    <!-- //////////////////////////////////////////-->
+  </body>
 </html>
